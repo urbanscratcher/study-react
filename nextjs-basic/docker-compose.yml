@@ -1,0 +1,17 @@
+# docker-compose.yml
+version: "3.7"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - "./pages:/app/pages"
+      - "/app/pages"
+      - "./public:/app/public"
+      - "./styles:/app/styles"
+      - "./package.json:/app/package.json"
+    ports:
+      - 3000:3000
