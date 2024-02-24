@@ -20,4 +20,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+expo®ft default HomePage;
